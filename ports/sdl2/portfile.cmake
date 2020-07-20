@@ -5,6 +5,7 @@ vcpkg_from_github(
     SHA512 3c9486cc42baae1b97f3fcc38fb2ee54071236c588bf33d1140502b1b5b05cec18bb5d11c4bbf66ca055b561cd28dfb294ccca55d44e1561df9d6c6cfc530194
     HEAD_REF main
     PATCHES
+        disable-dynapi.patch
         deps.patch
         alsa-dep-fix.patch
         cxx-linkage-pkgconfig.diff
