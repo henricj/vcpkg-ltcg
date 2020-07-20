@@ -1,0 +1,14 @@
+--- a/src/dynapi/SDL_dynapi.h	2020-07-22 05:49:26.233194000 -0700
++++ b/src/dynapi/SDL_dynapi.h	2020-07-22 05:49:26.240198200 -0700
+@@ -35,8 +35,9 @@
+    updated SDL can transparently take advantage of them, but your program will
+    not without this feature. Think hard before turning it off.
+ */
+-#ifdef SDL_DYNAMIC_API  /* Tried to force it on the command line? */
+-#error Nope, you have to edit this file to force this off.
++#ifndef SDL_DYNAMIC_API  /* Tried to force it on the command line? */
++#define SDL_DYNAMIC_API 0
++/*#error Nope, you have to edit this file to force this off*/
+ #endif
+
+ #ifdef __APPLE__

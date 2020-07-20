@@ -10,6 +10,7 @@ vcpkg_from_github(
         0002-sdl2-skip-ibus-on-linux.patch
         0003-sdl2-disable-sdlmain-target-search-on-uwp.patch
         0004-sdl2-alias-on-static-build.patch
+        disable-dynapi.patch
 )
 
 string(COMPARE EQUAL "${VCPKG_LIBRARY_LINKAGE}" "static" SDL_STATIC)
