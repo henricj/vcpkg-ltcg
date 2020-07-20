@@ -6,6 +6,7 @@ vcpkg_from_github(
     SHA512 809ac18aeb739cfc6558dc11a7b3abbdad62a8e651ae2bfc157f26947b0df063a34c117ea8bd003428b5618fa6ce21a655fda073f1ef15aa34bc4a442a578523
     HEAD_REF master
     PATCHES
+        disable-dynapi.patch
         0001-sdl2-Enable-creation-of-pkg-cfg-file-on-windows.patch
         0002-sdl2-skip-ibus-on-linux.patch
         0003-sdl2-disable-sdlmain-target-search-on-uwp.patch
