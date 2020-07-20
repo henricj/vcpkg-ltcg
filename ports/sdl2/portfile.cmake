@@ -5,6 +5,8 @@ vcpkg_from_github(
     REF release-${VERSION}
     SHA512 c4cffa32d4d43de64cc47ada80a657a9db53f4c60da3684f96a036527fdc12b0e459e9e638cab6c7eb796de29fd60ee5a8c73b56bccd8483024e225c81469961
     HEAD_REF main
+    PATCHES
+        disable-dynapi.patch
 )
 
 string(COMPARE EQUAL "${VCPKG_LIBRARY_LINKAGE}" "static" SDL_STATIC)
