@@ -6,6 +6,7 @@ vcpkg_from_github(
     SHA512 78794c5142153d9d7516815f6e9b2c153ab3cab466cbc35635d27d9bb7cd9cbfa2bb66b63569454d2de89975eba8a662d79ccba87204a263ddbf0bfd339b6926
     HEAD_REF master
     PATCHES
+        disable-dynapi.patch
         0001-sdl2-Enable-creation-of-pkg-cfg-file-on-windows.patch
         0002-sdl2-skip-ibus-on-linux.patch
 )
