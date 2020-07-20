@@ -13,6 +13,7 @@ vcpkg_extract_source_archive_ex(
         0002-sdl2-skip-ibus-on-linux.patch
         0003-sdl2-fix-uwp-build.patch
         0004-sdl2-macos-thread-detection-fix.patch
+        disable-dynapi.patch
 )
 
 string(COMPARE EQUAL "${VCPKG_LIBRARY_LINKAGE}" "static" SDL_STATIC)
